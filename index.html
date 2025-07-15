@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>veryfunny</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevent scrollbars */
       background: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
     }
     img {
-      max-width: 100%;
-      max-height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* Makes sure the image covers entire screen without distortion */
+      z-index: -1; /* Keeps image behind any other content */
     }
   </style>
 </head>
 <body>
-  <img src="realfunny.gif" alt="Real Funny GIF">
+  <img src="realfunny.gif" alt="Real Funny GIF" />
 </body>
 </html>
